@@ -7,7 +7,6 @@
     {% if consul_service_address is defined -%}
     "address": "{{ consul_service_address }}",
     {% endif -%}
-    "enableTagOverride": true,
     {% if consul_service_checks is defined -%}
     "checks": [
       {% for check in consul_service_checks -%}
