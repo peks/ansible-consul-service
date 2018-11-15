@@ -1,6 +1,6 @@
 - name: "Reload consul"
   service:
     name: consul
-    state: reloaded
+    state: restarted
   ignore_errors: True
   tags: ['consul-service']
